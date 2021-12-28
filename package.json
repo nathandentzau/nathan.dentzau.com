@@ -9,9 +9,9 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:pages": "eleventy",
-    "build:styles": "tailwindcss -i ./src/css/styles.css -o public/styles.css",
+    "build:styles": "tailwindcss -i ./src/css/styles.css -o docs/styles.css",
     "watch": "npm-run-all build:* --parallel watch:*",
     "watch:pages": "eleventy --serve",
-    "watch:styles": "tailwindcss -i ./src/css/styles.css -o public/styles.css --watch"
+    "watch:styles": "tailwindcss -i ./src/css/styles.css -o docs/styles.css --watch"
   }
 }
