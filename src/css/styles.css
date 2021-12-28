@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 700px;
+
+  @apply m-8;
+  @apply mt-32;
+
+  @apply lg:ml-40;
+  @apply xl:ml-48;
+  @apply 2xl:ml-80;
+}
+
+@screen xl {
+  .container {
+    max-width: 900px;
+  }
+}
+
+.link {
+  @apply underline;
+  @apply underline-offset-2;
+  @apply text-orange-800;
+}
